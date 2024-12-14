@@ -130,7 +130,7 @@ if (subPlans) {
                     <span class="duration">/місяць</span>
                     </p>
                     <div class="controls">
-                    <a class="btn btn-secondary font-size" href="#">Розпочати зараз</a>
+                    <a class="btn btn-secondary font-size" href="#">Розпочати</a>
                     <a class="btn btn-primary font-size" href="#">Вибрати план</a>
                     </div>
                 </div>
