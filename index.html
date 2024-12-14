@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang=uk>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=description content="Головна сторінка стримінгового сервісу StreamVibe">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css>
+<link rel=stylesheet href=styles/reset.css>
+<link rel=stylesheet href=styles/style.css>
+<link rel=icon type=image/webp href=logo-min.webp?>
+<title>StreamVibe</title>
+</head>
+<body>
+<header>
+<nav class="nav content-wrapper">
+<a href=index.html class=logo>
+<img src=images/logo.webp alt="Logo of StreamVibe">
+</a>
+<div class=nav-center>
+<ul class=nav-links>
+<li><a href=index.html class="font-size active">Головна</a></li>
+<li><a href=moviesAndShows.html class=font-size>Фільми & Серіали</a></li>
+<li><a href=support.html class=font-size>Підтримка</a></li>
+<li><a href=subscription.html class=font-size>Підписка</a></li>
+</ul>
+<form action=# class=search>
+<button type=submit class=icon>
+<svg height=34 width=34>
+<use href=images/icons.svg#search-24 />
+</svg>
+</button>
+<input id=searchInput name=searchInput>
+</form>
+</div>
+<div class=controls>
+<button type=button id=search class="search-icon icon">
+<svg height=34 width=34 class=icon-lg>
+<use href=images/icons.svg#search-34 />
+</svg>
+<svg height=34 width=34 class=icon-md>
+<use href=images/icons.svg#search-34 />
+</svg>
+<svg height=24 width=24 class=icon-sm>
+<use href=images/icons.svg#search-24 />
+</svg>
+</button>
+<button type=button id=notifications class=icon>
+<svg height=34 width=34 class=icon-lg>
+<use href=images/icons.svg#notification-34 />
+</svg>
+<svg height=34 width=34 class=icon-md>
+<use href=images/icons.svg#notification-34 />
+</svg>
+<svg height=24 width=24 class=icon-sm>
+<use href=images/icons.svg#notification-24 />
+</svg>
+</button>
+<button type=button id=burger class="burger icon">
+<svg height=24 width=24>
+<use class=burger-icon href=images/icons.svg#burger />
+</svg>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<article class=popup>
+<button id=close>&times;</button>
+<form action=get>
+<label for=email>Візьміть участь в розіграші</label>
+<input type=email name=email id=email placeholder=Email>
+<input type=submit value="Взяти участь" class="btn btn-primary">
+</form>
+<div id=timer>
+<div>
+<p class="time-value big-num" id=days>0</p>
+<p class="time-label font-size">Дні</p>
+</div>
+<div>
+<p class="time-value big-num" id=hours>0</p>
+<p class="time-label font-size">Години</p>
+</div>
+<div>
+<p class="time-value big-num" id=minutes>0</p>
+<p class="time-label font-size">Хвилини</p>
+</div>
+<div>
+<p class="time-value big-num" id=seconds>0</p>
+<p class="time-label font-size">Секунди</p>
+</div>
+</div>
+<p class="font-size center">до кінця акції!</p>
+</article>
+<div id=overlay></div>
+<section id=jumbotron class=jumbotron>
+<div class=content-wrapper>
+<section class=text-content>
+<h1 class=h1-58>Найкращий стримінговий досвід</h1>
+<p class=font-size>StreamVibe — це найкращий досвід потокового передавання для перегляду ваших улюблених фільмів і шоу за запитом, будь-коли та будь-де. <span class=md-screen>За допомогою StreamVibe ви можете насолоджуватися різноманітним контентом, включаючи останні блокбастери, класичні фільми, популярні телевізійні шоу тощо. Ви також можете створювати власні списки перегляду, щоб легко знаходити вміст, який хочете переглянути.</span></p>
+</section>
+<a class="btn btn-primary btn-icon" href=#><span class=font-size>Розпочати зараз</span></a>
+</div>
+</section>
+<section id=categories class=swiper-section>
+<div class=content-wrapper>
+<div class=swiper>
+<section class="swiper-top text-content">
+<div>
+<h2>Ознайомтеся з нашою різноманітністю категорій</h2>
+<p class=font-size>Незалежно від того, чи шукаєте ви комедію, щоб змусити вас сміятися, драму, щоб змусити вас задуматися, чи документальний фільм, щоб дізнатися щось нове</p>
+</div>
+<div class=controls>
+<div class="swiper-button-prev sm-btn sm-btn-light"></div>
+<div class=container-pagination>
+<div class=swiper-pagination></div>
+</div>
+<div class="swiper-button-next sm-btn sm-btn-light"></div>
+</div>
+</section>
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/action1.webp alt="Poster of Black Panther"></div>
+<div class=item><img src=images/posters/action2.webp alt="Poster of Action Movie"></div>
+<div class=item><img src=images/posters/action3.webp alt="Poster of Action Movie"></div>
+<div class=item><img src=images/posters/action4.webp alt="Poster of Action Movie"></div>
+</div>
+<a href=movie.html>
+<section class=caption>
+<h4>Action</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/adventure1.webp alt="Poster of Adventure Movie"></div>
+<div class=item><img src=images/posters/adventure2.webp alt="Poster of Adventure Movie"></div>
+<div class=item><img src=images/posters/adventure3.webp alt="Poster of Adventure Movie"></div>
+<div class=item><img src=images/posters/adventure4.webp alt="Poster of Adventure Movie"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>Adventure</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/comedy1.webp alt="Poster of Good Newwz"></div>
+<div class=item><img src=images/posters/comedy2.webp alt="Poster of Central Intelligence"></div>
+<div class=item><img src=images/posters/comedy3.webp alt="Poster of Bhool Bhulaiyaa 2"></div>
+<div class=item><img src=images/posters/comedy4.webp alt="Poster of Udanchhoo"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>Comedy</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/drama1.webp alt="Poster of Drama Movie"></div>
+<div class=item><img src=images/posters/drama2.webp alt="Poster of Drama Movie"></div>
+<div class=item><img src=images/posters/drama3.webp alt="Poster of Drama Movie"></div>
+<div class=item><img src=images/posters/drama4.webp alt="Poster of Drama Movie"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>Drama</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/horror1.webp alt="Poster of Horror Movie"></div>
+<div class=item><img src=images/posters/horror2.webp alt="Poster of Horror Movie"></div>
+<div class=item><img src=images/posters/horror3.webp alt="Poster of Horror Movie"></div>
+<div class=item><img src=images/posters/horror4.webp alt="Poster of Horror Movie"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>Horror</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/romance1.webp alt="Poster of Romance Movie"></div>
+<div class=item><img src=images/posters/romance2.webp alt="Poster of Romance Movie"></div>
+<div class=item><img src=images/posters/romance3.webp alt="Poster of Romance Movie"></div>
+<div class=item><img src=images/posters/romance4.webp alt="Poster of Romance Movie"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>Romance</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/thriller1.webp alt="Poster of Thriller Movie"></div>
+<div class=item><img src=images/posters/thriller2.webp alt="Poster of Thriller Movie"></div>
+<div class=item><img src=images/posters/thriller3.webp alt="Poster of Thriller Movie"></div>
+<div class=item><img src=images/posters/thriller4.webp alt="Poster of Thriller Movie"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>Thriller</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+<div class=swiper-slide>
+<div class=card>
+<div class=container>
+<div class=item><img src=images/posters/random1.webp alt="Poster of Random Genre Movie"></div>
+<div class=item><img src=images/posters/random2.webp alt="Poster of Random Genre Movie"></div>
+<div class=item><img src=images/posters/random3.webp alt="Poster of Random Genre Movie"></div>
+<div class=item><img src=images/posters/random4.webp alt="Poster of Random Genre Movie"></div>
+</div>
+<a href=#>
+<section class=caption>
+<h4>See more</h4>
+<svg height=20 width=20 class=icon-sm>
+<use href=images/icons.svg#arrow-right-20 />
+</svg>
+<svg height=24 width=24 class=icon-md>
+<use href=images/icons.svg#arrow-right-24 />
+</svg>
+<svg height=28 width=28 class=icon-lg>
+<use href=images/icons.svg#arrow-right-28 />
+</svg>
+</section>
+</a>
+</div>
+</div>
+</div>
+<div class=swiper-scrollbar></div>
+</div>
+</div>
+</section>
+<section id=devices class=devices>
+<div class=content-wrapper>
+<section class=text-content>
+<h2>Ми пропонуємо вам потокове передавання на різних пристроях.</h2>
+<p class=font-size>За допомогою StreamVibe ви можете насолоджуватися улюбленими фільмами та телешоу в будь-який час і в будь-якому місці. <span class=md-screen>Наша платформа розроблена таким чином, щоб бути сумісною з широким спектром пристроїв, гарантуючи, що ви ніколи не пропустите момент розваги.</span></p>
+</section>
+<div class=container>
+<div class=card>
+<div class=caption>
+<div id=phone-icon class=device-icon>
+<div class=icon-sm></div>
+<div class=icon-md></div>
+<div class=icon-lg></div>
+</div>
+<h3>Смартфони</h3>
+</div>
+<p class=font-size>StreamVibe оптимізовано як для смартфонів Android, так і для iOS. Завантажте нашу програму з Google Play Store або Apple App Store</p>
+</div>
+<div class=card>
+<div class=caption>
+<div id=tablet-icon class=device-icon>
+<div class=icon-sm></div>
+<div class=icon-md></div>
+<div class=icon-lg></div>
+</div>
+<h3>Планшети</h3>
+</div>
+<p class=font-size>StreamVibe оптимізовано як для смартфонів Android, так і для iOS. Завантажте нашу програму з Google Play Store або Apple App Store</p>
+</div>
+<div class=card>
+<div class=caption>
+<div id=tv-icon class=device-icon>
+<div class=icon-sm></div>
+<div class=icon-md></div>
+<div class=icon-lg></div>
+</div>
+<h3>Smart TV</h3>
+</div>
+<p class=font-size>StreamVibe оптимізовано як для смартфонів Android, так і для iOS. Завантажте нашу програму з Google Play Store або Apple App Store</p>
+</div>
+<div class=card>
+<div class=caption>
+<div id=laptop-icon class=device-icon>
+<div class=icon-sm></div>
+<div class=icon-md></div>
+<div class=icon-lg></div>
+</div>
+<h3>Ноутбуки</h3>
+</div>
+<p class=font-size>StreamVibe оптимізовано як для смартфонів Android, так і для iOS. Завантажте нашу програму з Google Play Store або Apple App Store</p>
+</div>
+<div class=card>
+<div class=caption>
+<div id=console-icon class=device-icon>
+<div class=icon-sm></div>
+<div class=icon-md></div>
+<div class=icon-lg></div>
+</div>
+<h3>Ігрові консолі</h3>
+</div>
+<p class=font-size>StreamVibe оптимізовано як для смартфонів Android, так і для iOS. Завантажте нашу програму з Google Play Store або Apple App Store</p>
+</div>
+<div class=card>
+<div class=caption>
+<div id=vr-icon class=device-icon>
+<div class=icon-sm></div>
+<div class=icon-md></div>
+<div class=icon-lg></div>
+</div>
+<h3>VR Гарнітури</h3>
+</div>
+<p class=font-size>StreamVibe оптимізовано як для смартфонів Android, так і для iOS. Завантажте нашу програму з Google Play Store або Apple App Store</p>
+</div>
+</div>
+</div>
+</section>
+<section id=questions class=accordion-section>
+<div class=content-wrapper>
+<section class=text-content>
+<div>
+<h2>Часто задавані питання</h2>
+<p class=font-size>Є питання? У нас є відповіді! Перегляньте наш розділ поширених запитань, щоб знайти відповіді на найпоширеніші запитання про StreamVibe.</p>
+</div>
+<a class="btn btn-primary font-size" href=#>Задати питання</a>
+</section>
+<section class=container>
+<div class=col>
+</div>
+<div class=col>
+</div>
+</section>
+</div>
+</section>
+<section id=subscription class=subscription>
+<div class=content-wrapper>
+<section class=text-content>
+<div>
+<h2>Виберіть план, який підходить саме вам</h2>
+<p class=font-size>Приєднайтеся до StreamVibe і виберіть один з наших гнучких варіантів підписки, адаптованих відповідно до ваших уподобань перегляду. Будьте готові до безперервних розваг!</p>
+</div>
+<div class=toggle id=toggleSub>
+<div class="toggle-btn font-size active" id=toggleMonthly>
+Щомісяця
+</div>
+<div class="toggle-btn font-size" id=toggleYearly>
+Щорічно
+</div>
+</div>
+</section>
+<div class=container id=pricingContainer>
+</div>
+</div>
+</section>
+<section class=banner>
+<div class=content-wrapper>
+<section class=text-content>
+<h2>Розпочніть безкоштовну пробну версію вже сьогодні!</h2>
+<p class=font-size>Це чіткий і стислий заклик до дії, який заохочує користувачів підписатися на безкоштовну пробну версію StreamVibe.</p>
+</section>
+<a class="btn btn-primary font-size" href=#>Розпочати безкоштовно</a>
+</div>
+</section>
+</main>
+<footer>
+<div class=content-wrapper>
+<div class=top-footer>
+<div class=col>
+<h5>Головна</h5>
+<ul>
+<li class=font-size><a href=categories.html>Категорії</a></li>
+<li class=font-size><a href=#devices>Пристрої</a></li>
+<li class=font-size><a href=#subscription>Ціни</a></li>
+<li class=font-size><a href=#questions>FAQ</a></li>
+</ul>
+</div>
+<div class=col>
+<h5>Фільми</h5>
+<ul>
+<li class=font-size><a href=#categories>Жанри</a></li>
+<li class=font-size><a href=categories.html>Трендове</a></li>
+<li class=font-size><a href=categories.html>Прем'єри</a></li>
+<li class=font-size><a href=categories.html>Популярне</a></li>
+</ul>
+</div>
+<div class=col>
+<h5>Серіали</h5>
+<ul>
+<li class=font-size><a href=#categories>Жанри</a></li>
+<li class=font-size><a href=categories.html>Трендове</a></li>
+<li class=font-size><a href=categories.html>Прем'єри</a></li>
+<li class=font-size><a href=categories.html>Популярне</a></li>
+</ul>
+</div>
+<div class=col>
+<h5>Підтримка</h5>
+<ul>
+<li class=font-size><a href=support.html>З'єднатись з нами</a></li>
+</ul>
+</div>
+<div class=col>
+<h5>Підписка</h5>
+<ul>
+<li class=font-size><a href=#subscription>Плани</a></li>
+<li class=font-size><a href=subscription.html>Переваги</a></li>
+</ul>
+</div>
+<div class=col>
+<h5>З'єднатися з нами</h5>
+<div class=container>
+<a href="" class=btn-link>
+<svg height=24 width=24 class="icon-lg icon">
+<use href=images/icons.svg#fb-24 />
+</svg>
+<svg height=20 width=20 class="icon-md icon">
+<use href=images/icons.svg#fb-20 />
+</svg>
+<svg height=20 width=20 class="icon-sm icon">
+<use href=images/icons.svg#fb-20 />
+</svg>
+</a>
+<a href="" class=btn-link>
+<svg height=24 width=24 class="icon-lg icon">
+<use href=images/icons.svg#tw-24 />
+</svg>
+<svg height=20 width=20 class="icon-md icon">
+<use href=images/icons.svg#tw-20 />
+</svg>
+<svg height=20 width=20 class="icon-sm icon">
+<use href=images/icons.svg#tw-20 />
+</svg>
+</a>
+<a href="" class=btn-link>
+<svg height=24 width=24 class="icon-lg icon">
+<use href=images/icons.svg#in-24 />
+</svg>
+<svg height=20 width=20 class="icon-md icon">
+<use href=images/icons.svg#in-20 />
+</svg>
+<svg height=20 width=20 class="icon-sm icon">
+<use href=images/icons.svg#in-20 />
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class=bottom-footer>
+<p class=font-size>@2023 streamvib, All Rights Reserved</p>
+<div class=container>
+<a href="" class=font-size>Terms of Use</a>
+<a href="" class=font-size>Privacy Policy</a>
+<a href="" class=font-size>Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
+<script src=js/popup.js defer></script>
+<script src=js/data.js defer></script>
+<script src=js/swiper.js></script>
+<script src=js/script.js></script>
+</body>
+</html>
